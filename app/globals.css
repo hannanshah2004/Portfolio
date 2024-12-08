@@ -1,21 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: #2d3748;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-color: #2b6cb0;
+  --background-color: #ebf8ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-color: #63b3ed;
+    --background-color: #2a4365;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hover-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.section-title {
+  @apply text-3xl font-bold mb-6 text-blue-600;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
+}
+
+.btn {
+  @apply px-6 py-2 rounded-full font-semibold transition-colors duration-300;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
