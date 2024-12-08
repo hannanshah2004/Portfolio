@@ -107,7 +107,7 @@ const MainContent: React.FC = () => {
           },
           {
             name: "ReferLoop",
-            link: "https://www.referloop.org/",
+            link: "https://referloop.vercel.app/",
             details: [
               "Developed a secure full-stack referral platform with React.js and Next.js.",
               "Integrated Docker and CI/CD pipelines for seamless deployment.",
