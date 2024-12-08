@@ -98,7 +98,7 @@ const MainContent: React.FC = () => {
         {[
           {
             name: "QuantumBull",
-            link: "https://thequantumbull.org/",
+            link: "https://quantumbull.vercel.app/",
             details: [
               "Django-based backend for fetching and filtering stock data.",
               "Implemented TensorFlow LSTM model for stock price predictions.",
