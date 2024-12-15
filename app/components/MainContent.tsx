@@ -136,7 +136,7 @@ const MainContent: React.FC = () => {
         {[
         {
             category: "Programming Languages",
-            skills: ["Java", "Python", "JavaScript", "C++", "HTML/CSS"],
+            skills: ["Python","JavaScript","Java", "C++", "HTML/CSS"],
         },
         {
             category: "Technologies",
